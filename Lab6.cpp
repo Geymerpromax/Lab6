@@ -1,20 +1,18 @@
 ﻿//С клавиатуры ввести строку. Подсчитать в ней количество символов и каждый пятый символ заменить на «#»
 #include <iostream>
-#include <string>
-#include <cstdio>
+#include <cstring>
 #include <algorithm>
+#include <cstdio>
+#include <stdlib.h>
 using namespace std;
 int main()
 {
-	setlocale(LC_ALL, "Russian");
-	string a;
+	system("chcp 1251");
+	system("cls");
+	char a[256];
 	int i;
-	cout << "Введите предложение: " << endl;
-	cin >> a;
-	cout << "Количество символов: " << a.length() << endl;
-	for (i = 4; a.length() > i; i += 5)
-	{
-		a.insert(i, "#");
-	}
-	cout << "Изменённое предложение: " << a << endl;
+	cout << "Введите предложение: ";
+	cin.getline (a, 256, '*');
+	cout << "Предложение: " << a << endl;
+	cout << strlen(a); // длина строки
 }
