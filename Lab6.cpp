@@ -10,7 +10,6 @@ int main()
 	system("chcp 1251");
 	system("cls");
 	char a[256], b[64];
-	int i;
 
 	cout << "Введите предложение 1: ";
 	cin.getline (a, 256);
@@ -20,16 +19,17 @@ int main()
 	cout << "Предложение 1: " << a << endl; 
 	cout << "Предложение 2: " << b << endl;
 
-	cout << "Размер 1: " << strlen(a) << endl; // длина строки
+	cout << "Размер 1: " << strlen(a) << endl; // длина строки символов
 
-	strcat_s(a, 256, b);// a + b 
+	strcat_s(a, 256, b);// a + b, 256 - размер массива a
 	cout << "Изм. a: " << a << endl;
-	strcat_s(a, 256, "ggg");// a + "ggg" 
+	strcat_s(a, 256, "ggg");// a + "ggg", 256 - размер массива a
 	cout << "Изм. a: " << a << endl;
 
-	strcpy_s(a, 256, b);// присвоить a значение b 
+	strcpy_s(a, 256, b);// присвоить a значение b, 256 - размер массива a
 	cout << "Изм. a: " << a << endl; 
 
-	cout << "результат сравнения a и b:" << strcmp(a, b);// от слова compare – сравнение
+
+	cout << "Изм. a:" << strcmp(a, b);// от слова compare – сравнение
 
 }
