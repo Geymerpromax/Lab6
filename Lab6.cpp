@@ -27,7 +27,7 @@ int main()
 	strcat_s(a, 256, "ggg");// a + "ggg" 
 	cout << "Изм. a: " << a << endl;
 
-	strcpy_s(a, 256, b);// a = b 
+	strcpy_s(a, 256, b);// присвоить a значение b 
 	cout << "Изм. a: " << a << endl; 
 
 	cout << strcmp(a, b);// от слова compare – сравнение
