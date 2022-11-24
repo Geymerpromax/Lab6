@@ -30,6 +30,6 @@ int main()
 	strcpy_s(a, 256, b);// присвоить a значение b 
 	cout << "Изм. a: " << a << endl; 
 
-	cout << strcmp(a, b);// от слова compare – сравнение
+	cout << "результат сравнения a и b:" << strcmp(a, b);// от слова compare – сравнение
 
 }
