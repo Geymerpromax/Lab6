@@ -28,8 +28,9 @@ int main()
 
 	strcpy_s(a, 256, b);// присвоить a значение b, 256 - размер массива a
 	cout << "Изм. a: " << a << endl; 
+	strcpy_s(a, 256, "ggg");// присвоить a "ggg", 256 - размер массива a
+	cout << "Изм. a: " << a << endl;
 
-
-	cout << "Изм. a:" << strcmp(a, b);// от слова compare – сравнение
+	cout << "Изм. a: " << strcmp(a, b);// от слова compare – сравнение
 
 }
